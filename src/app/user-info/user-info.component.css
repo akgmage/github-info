@@ -10,3 +10,24 @@
   margin: auto;
   border-radius: 25px;
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+  margin-top: 2rem;
+  width: 300px;
+  height: 300px;
+}
+.items {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 4rem;
+  list-style-type: none;
+}
