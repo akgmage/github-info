@@ -1,7 +1,9 @@
 <div class="container">
   <div class="card">
     <img [src]="userData?.avatar_url" alt="" />
-    <h3>{{ userData?.name }}</h3>
+    <h3>
+      <a href="https://github.com/akgmage">{{ userData?.name }}</a>
+    </h3>
     <ul class="items">
       <li>Followers: {{ userData?.followers }}</li>
       <li>Following: {{ userData?.following }}</li>
