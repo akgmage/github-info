@@ -1,9 +1,13 @@
 import { Injectable } from '@angular/core';
-
+import { HttpClient } from '@angular/common/http';
+import { User } from './user_interface';
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class UserService {
+  constructor(private http: HttpClient) {}
 
-  constructor() { }
+  getUserDetail() {
+    return this.http.get<User>(`https://api.github.com/users/akgmage`);
+  }
 }
