@@ -7,7 +7,7 @@ import { User } from './user_interface';
 export class UserService {
   constructor(private http: HttpClient) {}
 
-  getUserDetail() {
-    return this.http.get<User>(`https://api.github.com/users/akgmage`);
+  getUserDetail(userName: string) {
+    return this.http.get<User>(`https://api.github.com/users/${userName}`);
   }
 }
